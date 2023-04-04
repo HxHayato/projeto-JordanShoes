@@ -87,7 +87,7 @@ nav {
 }
 
 .banner .texto p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 500;
     border: none;
     outline: none;
@@ -121,7 +121,7 @@ nav {
 }
 
 main {
-    /* background-color: #F9F9F9; */
+    background-color: #F9F9F9;
     width: 90%;
     height: 100%;
 }

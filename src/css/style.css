@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F9F9F9;
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.anuncio {
+    background-color: #181818;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.anuncio p {
+    color: #F9F9F9;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+nav {
+    background-color: #F9F9F9;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nome-site {
+    color: #181818;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 378px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.banner img {
+    position: absolute;
+    opacity: 0.85;
+    width: 100vw;
+    height: 378px;
+    object-fit: cover;
+}
+
+.banner .texto {
+    position: absolute;
+    background: transparent;
+    opacity: 1;
+    margin-left: 5%;
+    width: 35%;
+    height: auto;
+    color: #F9F9F9;
+}
+
+.banner .texto h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    border: none;
+    outline: none;
+    font-weight: 600;
+}
+
+.banner .texto p {
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    line-height: 1.5rem;
+}
+
+.destaque {
+    background-color: #F9F9F9;
+    width: 80%;
+    height: 150px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.destaque h1 {
+    color: #181818;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.destaque p {
+    color: #474747;
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+main {
+    /* background-color: #F9F9F9; */
+    width: 90%;
+    height: 100%;
+}
+
+.produtos {
+    margin-bottom: 50px;
+    width: 100%;
+    height: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.tenis {
+    background-color: #EBE9EA;
+    width: 280px;
+    height: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.tenis:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    animation: 0.4 ease-in-out;
+}
+
+footer {
+    background-color: #181818;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    color: #EBE9EA;
+    font-weight: 500;
+    font-size: 1.05rem;
+}
+
+@media Screen and (max-width: 1115px) {
+    .banner .texto {
+        width: 40%;
+    }
+}
+
+@media Screen and (max-width: 1000px) {
+    .banner .texto {
+        width: 45%;
+    }
+}
+
+@media Screen and (max-width: 890px) {
+    .banner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .banner .texto {
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner .texto p {
+        text-align: center;
+    }
+}
+
+@media Screen and (max-width: 780px) {
+    .banner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .banner .texto {
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner .texto p {
+        text-align: center;
+    }
+}
+
+@media Screen and (max-width: 650px) {
+    .banner .texto {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner .texto h1 {
+        font-size: 1.7rem;
+    }
+
+    .banner .texto p {
+        text-align: center;
+    }
+}

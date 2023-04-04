@@ -96,6 +96,7 @@ nav {
 
 .destaque {
     background-color: #F9F9F9;
+    margin: 20px 0;
     width: 80%;
     height: 150px;
     overflow: hidden;
@@ -188,6 +189,7 @@ footer p {
     }
     
     .banner .texto {
+        margin: 0;
         width: 65%;
         display: flex;
         flex-direction: column;
@@ -208,6 +210,7 @@ footer p {
     }
     
     .banner .texto {
+        margin: 0;
         width: 75%;
         display: flex;
         flex-direction: column;
@@ -222,6 +225,7 @@ footer p {
 
 @media Screen and (max-width: 650px) {
     .banner .texto {
+        margin: 0;
         width: 90%;
         display: flex;
         flex-direction: column;
@@ -235,5 +239,9 @@ footer p {
 
     .banner .texto p {
         text-align: center;
+    }
+
+    .destaque h1 {
+        font-size: 1.7rem;
     }
 }

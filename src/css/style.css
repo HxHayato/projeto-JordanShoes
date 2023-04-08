@@ -6,8 +6,12 @@
     box-sizing: border-box;
 }
 
+:root {
+    --main-color: #F9F9F9;
+}
+
 body {
-    background-color: #F9F9F9;
+    background-color: var(--main-color);
     min-height: 100vh;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
@@ -31,13 +35,12 @@ header {
 }
 
 .anuncio p {
-    color: #F9F9F9;
+    color: var(--main-color);
     font-size: 1rem;
     font-weight: 500;
 }
 
 nav {
-    background-color: #F9F9F9;
     width: 100%;
     height: 60px;
     display: flex;
@@ -75,7 +78,9 @@ nav {
     margin-left: 5%;
     width: 35%;
     height: auto;
-    color: #F9F9F9;
+    color: var(--main-color);
+    transition: all .35s ease;
+    
 }
 
 .banner .texto h1 {
@@ -95,7 +100,6 @@ nav {
 }
 
 .destaque {
-    background-color: #F9F9F9;
     margin: 20px 0;
     width: 80%;
     height: 150px;
@@ -121,21 +125,14 @@ nav {
 }
 
 main {
-    background-color: #F9F9F9;
-    width: 90%;
-    height: 100%;
-}
-
-.produtos {
-    margin-bottom: 50px;
+    padding: 40px 4%;
     width: 100%;
-    height: 100%;
     height: auto;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: center;
     gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    justify-items: center;
+    align-items: center;
 }
 
 .tenis {
@@ -152,6 +149,7 @@ main {
     cursor: pointer;
     transform: scale(1.05);
     animation: 0.4 ease-in-out;
+    transition: all .35s ease-in-out;
 }
 
 footer {
